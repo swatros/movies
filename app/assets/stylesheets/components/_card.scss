@@ -1,0 +1,25 @@
+.card-container {
+  width: 80%;
+  margin-left: 250px;
+  margin-top: 50px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  position: absolute;
+
+}
+
+.list-card {
+  width: 200px;
+  padding: 10px;
+  margin: 5px;
+  background-size: cover;
+  height: 200px;
+  background-position: center;
+  border: 1px solid white;
+  color: white;
+  text-decoration: none;
+
+}

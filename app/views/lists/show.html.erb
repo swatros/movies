@@ -1,0 +1,25 @@
+<div class="background-container">
+  <div class="banner">
+    <%= @list.name %>
+    <%= link_to new_list_bookmark_path(@list) do %>
+      <div class="button new">Add a movie</div>
+    <% end %>
+  </div>
+
+  <div class="card-container">
+    <% @list.bookmarks.each do |bookmark| %>
+      <div class="movie-card">
+        <%= bookmark.movie.title %>
+        <%= bookmark.movie.rating %>
+        <img src=<%=bookmark.movie.poster_url%> alt="movie poster">
+        <%= link_to list_bookmark_path(@list, bookmark), method: :delete, data: { confirm: 'Are you sure?' }, class: 'card-remove-link' do %>
+          <i class="far fa-times-circle"></i>
+      </div>
+      <% end %>
+    <% end %>
+  </div>
+
+  <%= link_to lists_path do %>
+      <div class="button">Back</div>
+    <% end %>
+</div>
