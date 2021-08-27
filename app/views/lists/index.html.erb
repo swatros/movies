@@ -5,14 +5,14 @@
   <div class="banner">
     <h1>movie lists</h1>
     <%= link_to new_list_path do %>
-      <div class="button new">New list</div>
+      <div class="button new">new list</div>
     <% end %>
   </div>
 
   <div class="card-container">
     <% @lists.each do |list| %>
       <%= link_to list_path(list) do %>
-        <div class="list-card" style = "background: url('https://source.unsplash.com/random/200x200')">
+        <div class="list-card" style="background-image: url('https://source.unsplash.com/random/250x250');">
         <%= list.name %>
         </div>
         <% end %>

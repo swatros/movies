@@ -7,7 +7,7 @@
 .background {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(90deg, rgba(48,48,48,1) 30%, rgba(0,0,0,1) 100%);
+  background: linear-gradient(90deg, rgba(120,81,205,1) 0%, rgba(76,33,173,1) 10%, rgba(35,9,93,1) 30%, rgba(40,23,78,1) 43%, rgba(0,0,0,1) 66%);
   position: fixed;
   top: 0;
 }
@@ -16,7 +16,7 @@
 .banner {
   width: 15%;
   height: 100vh;
-  background: rgba(black, .5);
+  background: rgba(black, .4);
   color: white;
   display: flex;
   justify-content: flex-start;
