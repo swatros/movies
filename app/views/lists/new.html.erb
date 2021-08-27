@@ -1,4 +1,10 @@
-<%= simple_form_for @list do |f| %>
-  <%= f.input :name  %>
-  <%= f.button :submit %>
-<% end %>
+<div class="background">
+  <div class="app-form">
+  <h2>create a new list</h2>
+  <%= simple_form_for @list do |f| %>
+    <%= f.input :name  %>
+    <%= f.input :photo, as: :file %>
+    <%= f.button :submit %>
+  <% end %>
+  </div>
+</div>

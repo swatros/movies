@@ -15,11 +15,11 @@
   <div class="card-container">
     <% @list.bookmarks.each do |bookmark| %>
       <div class="list-card" style="background-image: url(<%=bookmark.movie.poster_url%>); background-size: 200px"%>
-        <p><%= bookmark.movie.title %></p>
-        <p class="rating">(<%= bookmark.movie.rating %>/10)</p>
+        <span class="title"><%= bookmark.movie.title %></span>
+        <span class="rating">(<%= bookmark.movie.rating %>/10)</span>
 
         <%= link_to list_bookmark_path(@list, bookmark), method: :delete, data: { confirm: 'Are you sure?' }, class: 'card-remove-link' do %>
-          <i class="far fa-times-circle"></i>
+          <i id="test" class="far fa-times-circle d-none"></i>
       </div>
       <% end %>
     <% end %>

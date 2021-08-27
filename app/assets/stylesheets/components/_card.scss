@@ -8,7 +8,6 @@
   justify-content: flex-start;
   align-items: center;
   position: absolute;
-
 }
 
 .list-card {
@@ -18,38 +17,52 @@
   margin: 20px;
   height: 200px;
   background-position: center;
+  background-size: cover;
   box-shadow: 0 0 10px gray;
   border-radius: 4px;
   color: white;
   text-decoration: none;
-  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
   filter: grayscale(100%);
-  transition: 0.3s;
+  transition: 0.2s;
 
-  p {
+  .title {
     color: black;
     background-color: rgba(white,.7);
-    font-size: 18px;
+    font-size: 16px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
   }
+
+  .rating {
+  color: black;
+  background-color: rgba(white,.7);
+  font-size: 12px;
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+}
 
 }
 
+.far {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  color: red;
+  background-color: rgba(white,.7);
+  border-radius: 10px;
+  padding: 2px;
+}
+
 .list-card:hover {
-  padding: 15px;
+  position: relative;
   border: 3px solid white;
   background-position: left;
   font-weight: bold;
   filter: grayscale(0%);
 }
 
-.rating {
-  position: absolute;
-  bottom: 0;
-  background-color: rgba(white,0);
-}
-
-.far {
-  position: absolute;
-  bottom: 0;
-  right: 0;
+a:hover {
+  text-decoration: none;
 }

@@ -12,7 +12,7 @@
   <div class="card-container">
     <% @lists.each do |list| %>
       <%= link_to list_path(list) do %>
-        <div class="list-card" style="background-image: url('https://source.unsplash.com/random/250x250');">
+        <div class="list-card" style="background-image: url('<%= cl_image_path list.photo.key %>');">
         <%= list.name %>
         </div>
         <% end %>
